@@ -8,22 +8,33 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   <script type="text/javascript" src="assets/javascript/app.js"></script>
-    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <!-- Header and all buttons -->
-    <h1>Comedian GifTastic</h1>
-    <div class="container-fluid">
+    <div class="container">
+        <h1>Comedian GifTastic</h1>
         <div id="allbuttons" class="row">  
                 <button></button>
 
         </div>
     </div>
+    <br>
+    <form id="comic-form">
+        <label for="comic-input">Add a Comic!</label>
+        <input type="text" id="comic-input"><br>
+  
+        <!-- Button triggers new comic to be added -->
+        <input id="add-comic" type="submit" value="Add a Comic!">
+      </form>
+      <br>
     <!-- All Images-->
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div id="mainimages" class="col-8">
+            <div id="mainimages">
                     <div id="comic-view"></div>
+                    <br>
                     <div id="comic-gif"></div>
 
             </div>
