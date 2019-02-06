@@ -7,7 +7,7 @@ $(document).ready(function() {
             comic = $(this).attr("data-name");  
             console.log(comic);
             // var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&tag=" + comic ;
-            var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + comic +  "&api_key=Fnhf0tnlehUm2qCPLYl9lC6QSEA0KuQZ&limit=10";  
+            var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + comic +  "&api_key=Fnhf0tnlehUm2qCPLYl9lC6QSEA0KuQZ&limit=10";  
             $.ajax({
                 url: queryURL,
                 method: "GET"
